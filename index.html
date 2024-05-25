@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuous Pop-up Example</title>
+</head>
+<body>
+    <h1>Continuous Pop-up Example</h1>
+    <button id="start">Start Opening Windows</button>
+    <button id="stop">Stop Opening Windows</button>
+
+    <script>
+        let popUpInterval;
+
+        document.getElementById('start').addEventListener('click', function() {
+            popUpInterval = setInterval(function() {
+                window.open('https://www.example.com', '_blank');
+            }, 1000); // Change the interval time as needed
+        });
+
+        document.getElementById('stop').addEventListener('click', function() {
+            clearInterval(popUpInterval);
+        });
+    </script>
+</body>
+</html>
