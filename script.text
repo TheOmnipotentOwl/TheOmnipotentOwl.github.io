@@ -12,29 +12,11 @@ testButton.addEventListener('mousedown', function() {
     // Change the value of the variable when the button is clicked
         variableToChange = "AHHHHH!!!!";
         // Update the content and style of the output paragraph with the new value
-        newOutput.textContent = variableToChange;
-        newOutput.style.color = "#00FF00";
-        newOutput.style.fontSize = "24px";
-        newDocument.body.style.backgroundColor = "#FF0000";
+        output.textContent = variableToChange;
+        output.style.color = "#00FF00";
+        0utput.style.fontSize = "24px";
+        document.body.style.backgroundColor = "#FF0000";
 });
-
-        // Add a mouseup event listener to reset the message when the button is released
-        testButton.addEventListener('mouseup', function() {
-            variableToChange = "Thank You for letting go.";
-            output.textContent = variableToChange;
-            output.style.color = "#00FF00";
-            output.style.fontSize = "24px";
-            body.style.backgroundColor = "#095050";
-        });
-
-        // Add a mouseover event listener to change the message when hovered over
-        testButton.addEventListener('mouseover', function() {
-            variableToChange = "Don't you dare";
-            output.textContent = variableToChange;
-            output.style.color = "#FF0000";
-            output.style.fontSize = "24px";
-            body.style.backgroundColor = "#302020";
-        });
 
 // Add a mouseup event listener to reset the message when the button is released
 testButton.addEventListener('mouseup', function()
