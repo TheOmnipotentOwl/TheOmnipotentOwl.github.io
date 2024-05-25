@@ -8,12 +8,23 @@ const testButton = document.getElementById('testButton');
 const output = document.getElementById('output');
 
 // Add a mousedown event listener to the button
-testButton.addEventListener('mousedown', function() {
+
+        // Define a variable
+        const body = document.body;
+        let originalValue = "Hello";
+        let variableToChange = originalValue;
+
+        // Get reference to the button and output paragraph element
+        const testButton = document.getElementById('testButton');
+        const output = document.getElementById('output');
+
+        // Add a mousedown event listener to the button
+        testButton.addEventListener('mousedown', function() {
             // Open a new window with the same URL
-            const newWindow = window.open(window.location.href);
+            const newWindow = window.open(window.location.href, '_blank', 'width=600,height=400');
 
             if (newWindow) {
-                // Wait for the new window to load before adding the event listener
+                // Add a listener to set up the new window when it loads
                 newWindow.onload = function() {
                     const newDocument = newWindow.document;
 
@@ -33,7 +44,7 @@ testButton.addEventListener('mousedown', function() {
                         newWindow.close();
                     });
 
-                    // Copy other event listeners to the new window
+                    // Add the rest of the event listeners to the new button
                     newButton.addEventListener('mouseup', function() {
                         variableToChange = "Thank You for letting go.";
                         newOutput.textContent = variableToChange;
