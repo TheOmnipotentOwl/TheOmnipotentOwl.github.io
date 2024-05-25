@@ -2,80 +2,50 @@
 <html>
   <head>
     <style>
-      body
-      {
-        background-color: #095050;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+      /* Your existing CSS styles */
+      .bottom-right-button {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        padding: 20px 40px; /* Adjust padding to make the button larger */
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 20px; /* Adjust font size */
+        transition: background-color 0.3s ease;
       }
 
-      .container
-      {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      .bottom-right-button:hover {
+        background-color: #0056b3;
       }
-
-      .test_button
-      {
-        background-color: rgba(255, 0, 0, 1);
-        color: rgba(255, 225, 225, 1);
-        border-color: rgba(0, 255, 0, 1);
-        border-style: solid;
-        border-width: 5px;
-        border-radius: 30px;
-        padding: 10px;
-        font-size: 20px;
-        font-family: Times New Roman;
-        cursor: wait;
-        transition: all 2s;
-        }
-
-        .test_button:hover
-        {
-        border-style: dotted;
-        border-width: 3px;
-        border-radius: 15px;
-        padding: 8px;
-        font-size: 15px;
-        background-color: rgba(0, 255, 0, 1);
-        border-color: rgba(255, 0, 0, 1);
-        color: rgba(0, 0, 0, 1);
-        font-family: cursive;
-        }
-
-        .test_button:active
-        {
-          cursor: crosshair;
-          border-style: dashed;
-          border-width: 1px;
-          border-radius: 0px;
-          padding: 6px;
-          font-size: 10px;
-          background-color: rgba(0, 0, 255, 1);
-          border-color: rgba(255, 255, 0, 1);
-          color: rgba(255, 225, 225, 1);
-          font-family: monospace;
-        }
-
     </style>
   </head>
   
   <body>
     <div class="container">
-        <button id="testButton" class="test_button">
-          The Bad Button
-        </button>
+      <button id="testButton" class="test_button">
+        The Bad Button
+      </button>
+
+      <button class="bottom-left-button" onclick="while (true){ window.open('https://thewebsitespammer.github.io', '_blank') }">
+        Break Your Computer ;D
+      </button>
       
-        <p id="output" style="color: blue; font-size: 24px;"></p>
+      <button class="bottom-right-button">
+        Larger Button
+      </button>
+      
+      <p id="output" style="color: blue; font-size: 24px;"></p>
     </div>
     
     <script src="script.js"></script>
     
     <script>
-      alert("Welcome, please do not push the Button");
+      window.onload = function() {
+        alert("Welcome, please do not push the Button");
+      };
     </script>
   </body>
 </html>
