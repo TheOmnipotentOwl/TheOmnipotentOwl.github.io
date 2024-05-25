@@ -8,71 +8,16 @@ const testButton = document.getElementById('testButton');
 const output = document.getElementById('output');
 
 // Add a mousedown event listener to the button
-
-        // Define a variable
-        const body = document.body;
-        let originalValue = "Hello";
-        let variableToChange = originalValue;
-
-        // Get reference to the button and output paragraph element
-        const testButton = document.getElementById('testButton');
-        const output = document.getElementById('output');
-
-        // Add a mousedown event listener to the button
-        testButton.addEventListener('mousedown', function() {
-            // Open a new window with the same URL
-            const newWindow = window.open(window.location.href, '_blank', 'width=600,height=400');
-
-            if (newWindow) {
-                // Add a listener to set up the new window when it loads
-                newWindow.onload = function() {
-                    const newDocument = newWindow.document;
-
-                    // Get references to elements in the new window
-                    const newButton = newDocument.getElementById('testButton');
-                    const newOutput = newDocument.getElementById('output');
-
-                    // Add a mousedown event listener to the button in the new window
-                    newButton.addEventListener('mousedown', function() {
-                        // Change the value of the variable when the button is clicked
-                        variableToChange = "AHHHHH!!!!";
-                        // Update the content and style of the output paragraph with the new value
-                        newOutput.textContent = variableToChange;
-                        newOutput.style.color = "#00FF00";
-                        newOutput.style.fontSize = "24px";
-                        newDocument.body.style.backgroundColor = "#FF0000";
-                        newWindow.close();
-                    });
-
-                    // Add the rest of the event listeners to the new button
-                    newButton.addEventListener('mouseup', function() {
-                        variableToChange = "Thank You for letting go.";
-                        newOutput.textContent = variableToChange;
-                        newOutput.style.color = "#00FF00";
-                        newOutput.style.fontSize = "24px";
-                        newDocument.body.style.backgroundColor = "#095050";
-                    });
-
-                    newButton.addEventListener('mouseover', function() {
-                        variableToChange = "Don't you dare";
-                        newOutput.textContent = variableToChange;
-                        newOutput.style.color = "#FF0000";
-                        newOutput.style.fontSize = "24px";
-                        newDocument.body.style.backgroundColor = "#302020";
-                    });
-
-                    newButton.addEventListener('mouseout', function() {
-                        variableToChange = "Don't go over there again.";
-                        newOutput.textContent = variableToChange;
-                        newOutput.style.color = "#0000FF";
-                        newOutput.style.fontSize = "24px";
-                        newDocument.body.style.backgroundColor = "#095050";
-                    });
-                };
-            } else {
-                alert("Popup blocked. Please allow popups for this site.");
-            }
-        });
+testButton.addEventListener('mousedown', function() {
+    // Change the value of the variable when the button is clicked
+        variableToChange = "AHHHHH!!!!";
+        // Update the content and style of the output paragraph with the new value
+        newOutput.textContent = variableToChange;
+        newOutput.style.color = "#00FF00";
+        newOutput.style.fontSize = "24px";
+        newDocument.body.style.backgroundColor = "#FF0000";
+        newWindow.close();
+});
 
         // Add a mouseup event listener to reset the message when the button is released
         testButton.addEventListener('mouseup', function() {
