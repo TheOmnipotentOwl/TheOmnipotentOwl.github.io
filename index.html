@@ -4,11 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Continuous Pop-up Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #444;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #008CBA;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #005f73;
+        }
+    </style>
 </head>
 <body>
     <h1>Continuous Pop-up Example</h1>
-    <button id="start">Start Opening Windows</button>
-    <button id="stop">Stop Opening Windows</button>
+    <div class="button-container">
+        <button id="start">Start Opening Windows</button>
+        <button id="stop">Stop Opening Windows</button>
+    </div>
 
     <script>
         let popUpInterval;
