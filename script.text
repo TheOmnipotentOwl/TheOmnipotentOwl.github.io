@@ -16,7 +16,6 @@ testButton.addEventListener('mousedown', function() {
         newOutput.style.color = "#00FF00";
         newOutput.style.fontSize = "24px";
         newDocument.body.style.backgroundColor = "#FF0000";
-        newWindow.close();
 });
 
         // Add a mouseup event listener to reset the message when the button is released
