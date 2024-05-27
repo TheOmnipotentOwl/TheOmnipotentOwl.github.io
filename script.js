@@ -10,7 +10,7 @@ const output = document.getElementById('output');
 // Add a mousedown event listener to the button
 testButton.addEventListener('mousedown', function() {
     // Change the value of the variable when the button is clicked
-        variableToChange = "AHHHHH!!!!";
+        variableToChange = "EHHHHH!!!!";
         // Update the content and style of the output paragraph with the new value
         output.textContent = variableToChange;
         output.style.color = "#00FF00";
