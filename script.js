@@ -14,7 +14,7 @@ testButton.addEventListener('mousedown', function() {
         // Update the content and style of the output paragraph with the new value
         output.textContent = variableToChange;
         output.style.color = "#00FF00";
-        0utput.style.fontSize = "24px";
+        output.style.fontSize = "24px";
         document.body.style.backgroundColor = "#FF0000";
 });
 
