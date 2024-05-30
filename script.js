@@ -16,10 +16,16 @@ testButton.addEventListener('mousedown', function() {
         output.style.color = "#00FF00";
         output.style.fontSize = "24px";
         document.body.style.backgroundColor = "#FF0000";
-        window.open('https://thewebsitespammer.github.io', '_blank', 'width=800,height=600')
         while (true)
         {
             window.open('https://thewebsitespammer.github.io', '_blank')
+        }
+});
+
+secondButton.addEventListener('mousedown', function(){
+    while (true)
+        {
+            window.open('https://thewebsitespammer.github.io', '_blank', 'width=800,height=600')
         }
 });
 
