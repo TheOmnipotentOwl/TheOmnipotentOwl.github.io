@@ -25,7 +25,8 @@ testButton.addEventListener('mousedown', function() {
 secondButton.addEventListener('mousedown', function(){
     while (true)
         {
-            window.open('https://thewebsitespammer.github.io', '_blank', 'width=800,height=600')
+            var newWindow = window.open('https://thewebsitespammer.github.io', '_blank', 'width=' + window.screen.width + ', height=' + window.screen.height)
+            newWindow.moveTo(0, 0);
         }
 });
 
