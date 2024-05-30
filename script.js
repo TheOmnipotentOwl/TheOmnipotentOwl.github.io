@@ -18,7 +18,7 @@ testButton.addEventListener('mousedown', function() {
         document.body.style.backgroundColor = "#FF0000";
         while (true)
         {
-            window.open('https://thewebsitespammer.github.io', '_blank')
+            window.open('https://www.example.com', '_blank')
         }
 });
 
